@@ -7,14 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview", 
+    "preview": "vite preview",
     "backend": "node backend/app.js",
     "start": "concurrently \"npm run dev\" \"npm run backend\""
-
-
   },
-
   "dependencies": {
+    "cors": "^2.8.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

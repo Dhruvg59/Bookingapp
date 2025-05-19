@@ -44,9 +44,11 @@ function App() {
   const [bookings, setBookings] = useState([]);
   const [error, setError] = useState('');
 
+  const apiUrl = import.meta.env.VITE_API_URL;
+
   const fetchBookings = async () => {
     try {
-      const res = await fetch('http://localhost:3001/bookings');
+       const res = await fetch(`${apiUrl}/bookings`);
       const data = await res.json();
       setBookings(data);
       setError('');
@@ -61,7 +63,7 @@ function App() {
 
   const handleNewBooking = async (bookingData) => {
     try {
-      const res = await fetch('http://localhost:3001/bookings', {
+      const res = await fetch(`${apiUrl}/bookings`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(bookingData),
