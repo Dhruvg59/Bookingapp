@@ -44,7 +44,7 @@ function App() {
   const [bookings, setBookings] = useState([]);
   const [error, setError] = useState('');
 
-  const apiUrl = import.meta.env.VITE_API_URL;
+  const apiUrl ="https://bookingapp-3-6csh.onrender.com";
 
   const fetchBookings = async () => {
     try {
