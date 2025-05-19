@@ -34,15 +34,15 @@ This app lets users book time slots and prevents overlapping bookings. All booki
 ### 1. Clone the repository
 
 
-git clone 
-cd calendar-booking
+-git clone https://github.com/Dhruvg59/Bookingapp.git
+-cd calendar-booking
 
 ### 2. Install all dependency 
 
-npm install
-cd backend
-npm install
-cd ..
+-npm install
+-cd backend
+-npm install
+-cd ..
 
 ### 3. Start the application
 
